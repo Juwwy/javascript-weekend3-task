@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onmousedown="task1();">alice and bob </button><br>
+    <button onmousedown="task2();">SumUp </button><br>
+    <button onmousedown="task3();">SumUp or Multiply </button><br>
+    <button onmousedown="multiplet1();">1 times table </button><br>
+    <button onmousedown="multiplet2();">2 times table </button><br>
+    <button onmousedown="multiplet3();">3 times table </button><br>
+    <button onmousedown="multiplet4();">4 times table </button><br>
+    <button onmousedown="multiplet5();">5 times table </button><br>
+    <button onmousedown="multiplet6();">6 times table </button><br>
+    <button onmousedown="multiplet7();">7 times table </button><br>
+    <button onmousedown="multiplet8();">8 times table </button><br>
+    <button onmousedown="multiplet9();">9 times table </button><br>
+    <button onmousedown="multiplet10();">10 times table </button><br>
+    <button onmousedown="multiplet11();">11 times table </button><br>
+    <button onmousedown="multiplet12();">12 times table </button><br>
+    <button onmousedown="primeNum();">primeNumber print </button><br>
+    <button onmousedown="leap20();">20 leap years print </button><br>
+
+
+
+
+
+    <script>
+    
+    // task1
+
+function task1(){
+    var userMe;
+
+do{
+    userMe = prompt("What is your name?");
+}while(userMe != userMe || userMe ==""){
+    userMe = userMe.toLowerCase();
+    if(userMe == "alice"){
+        alert("Welcome alice! we missed you. it is a pleasure to have you here again");
+    }else if(userMe == "bob"){
+        alert("Welcome bob! we missed you. it is a pleasure to have you here again");
+    }else{
+        alert(`Welcome ${userMe}! we are glad to have you here.`);
+    }
+}
+
+}
+
+
+//<--- Task Two--->
+//Modify addition in sumUp of +5
+
+function task2(){
+    var num = parseInt(prompt("enter number"));
+
+var i = 1;
+var sumUp = 0;;
+
+while(i <= num){
+    sumUp = i;
+    i = i + 5;
+    document.write(`  ${sumUp}</br>`);
+}
+}
+
+    //<--- Task Three--->
+
+
+   function task3(){
+    var clientName;
+
+do{
+    clientName = prompt("Welcome what is your name?");
+}while((clientName != clientName) || clientName ==""){
+    alert(`Ok ${clientName} let serve you` );
+ var askMe =   prompt("Do you wish to make addition or multiplication? ");
+ askMe = askMe.toLowerCase();
+    if(askMe == "addition"){
+        var inputNumber, inputNumber2;
+        var sumUp = 0;
+        var product  ;
+        do{
+            inputNumber = parseInt(prompt("Enter a number"));
+        }while(inputNumber != inputNumber){
+            for (var i = 1; i <= inputNumber; i++){
+                sumUp = i;
+                document.write(` ${sumUp}</br>`);
+            }
+        }
+
+
+
+
+    }else if(askMe == "multiplication"){
+        do{
+            inputNumber = parseInt(prompt("Enter a number"));
+            // inputNumber2 = parseInt(prompt("Enter a number"));
+        }while(inputNumber != inputNumber){
+            for(var i =1; i <= 12; i++){
+                product = inputNumber * i;
+                document.write(`${product}</br>`);
+            }
+        }
+    }else{
+        alert(`Sorry! ${clientName} Cancelled`);
+    }
+}
+
+
+   }
+    
+        // task$
+      
+
+        function multiplet1(){
+            var getProduct1 = 1;
+        var product;
+
+        for(var i =1; i <= 12; i++){
+        product = getProduct1 * i;
+        document.write(`${product}</br>`);
+
+        
+        }
+        }
+    
+        function multiplet2(){
+            var getProduct2 = 2;
+        var product2;
+
+        for(var i =1; i <= 12; i++){
+            product2 = getProduct2 * i; 
+            document.write(`${product2}</br>`);
+
+        }
+        }
+
+       function multiplet3(){
+        var getProduct3 = 3;
+        var product3;
+
+        for(var i =1; i <= 12; i++){
+            product3 = getProduct3 * i; 
+            document.write(`${product3}</br>`);
+
+        }
+       }
+
+       function multiplet4(){
+        var getProduct4 = 4;
+        var product4;
+
+        for(var i =1; i <= 12; i++){
+            product4 = getProduct4 * i; 
+            document.write(`${product4}</br>`);
+
+        }
+       }
+
+        function multiplet5(){
+            var getProduct5 = 5;
+        var product5;
+
+        for(var i =1; i <= 12; i++){
+            product5 = getProduct5 * i; 
+            document.write(`${product5}</br>`);
+
+        }
+        }
+
+        function multiplet6(){
+            var getProduct6 = 6;
+        var product6;
+
+        for(var i =1; i <= 12; i++){
+            product6 = getProduct6 * i; 
+            document.write(`${product6}</br>`);
+
+        }
+        }
+
+        function multiplet7(){
+            var getProduct7 = 7;
+        var product7;
+
+        for(var i =1; i <= 12; i++){
+            product7 = getProduct7 * i; 
+            document.write(`${product7}</br>`);
+
+        }
+        }
+
+       function multiplet8(){
+        var getProduct8 = 8;
+        var product8;
+
+        for(var i =1; i <= 12; i++){
+            product8 = getProduct8 * i; 
+            document.write(`${product8}</br>`);
+
+        }
+       }
+
+       function multiplet9(){
+        var getProduct9 = 9;
+        var product9;
+
+        for(var i =1; i <= 12; i++){
+            product9 = getProduct9 * i; 
+            document.write(`${product9}</br>`);
+
+        }
+       }
+
+       function multiplet10(){
+        var getProduct10 = 10;
+        var product10;
+
+        for(var i =1; i <= 12; i++){
+            product10 = getProduct10 * i; 
+            document.write(`${product10}</br>`);
+
+        }
+       }
+
+        function multiplet11(){
+            var getProduct11 = 11;
+        var product11;
+
+        for(var i =1; i <= 12; i++){
+            product11 = getProduct11 * i; 
+            document.write(`${product11}</br>`);
+
+        }
+        }
+
+       function multiplet12(){
+        var getProduct12 = 12;
+        var product10;
+
+        for(var i =1; i <= 12; i++){
+            product12 = getProduct12 * i; 
+            document.write(`${product12}</br>`);
+
+        }
+       }
+
+       function primeNum(){
+        var primeNumber;
+        
+        do{
+            primeNumber = parseInt(prompt("Enter number"));
+        }while(primeNumber != primeNumber || primeNumber == "" || primeNumber < 20){
+          var run =2; 
+
+            for( var i = 20; i <= primeNumber; i++){
+                var run =2;
+                
+                while(run <= i -1){
+                
+                if(i % run == 0){
+                    break;
+                }run++
+            }
+            if(run == i){
+                document.write(`${i}</br>`);
+            }
+           
+            
+            }
+        }
+
+}
+        
+
+
+
+
+
+// 20 leap year
+
+
+function leap20(){
+    var year = prompt("please input a year to find out the next 20 leap years");
+var counter = 20;
+
+function leapyear(years, num) {
+   
+    years = parseInt(years);
+    var origNum = num;
+    
+    years++;
+  
+    var leapYears = '';
+   
+    while (num > 0) {
+        
+        if (years % 4 === 0 && (years % 100 !== 0 || ( years % 100 === 0 && years % 400 === 0))) {
+           
+            if (num === 1) {
+               
+                leapYears += years + ".";
+            }
+            else {
+                leapYears += years + ", ";
+            }
+            years++;
+            num--;
+        }
+        else {
+           
+            years++;
+        }
+    }
+    return "The next " + origNum + " leap years are " + leapYears;
+}
+
+document.write(leapyear(year, counter));
+}
+
+
+
+    </script>
+</body>
+</html>
